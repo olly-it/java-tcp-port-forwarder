@@ -13,6 +13,7 @@ public class Starter implements CommandLineRunner {
 
 	@Override
 	public void run(String... args) throws IOException {
+		System.out.println("TCP port forwarder (by Olly)");
 		try {
 			int inPort = Integer.parseInt(args[0]);
 			String outIp = args[1];
