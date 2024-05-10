@@ -113,11 +113,9 @@ class ClientThread extends Thread {
 		ForwardThread serverForward = new ForwardThread(this, serverIn, clientOut);
 		serverForward.start();
 
-		// System.out.println("TCP Forwarding " +
-		// mClientSocket.getInetAddress().getHostAddress() + ":"
-		// + mClientSocket.getPort() + " <--> " +
-		// mServerSocket.getInetAddress().getHostAddress() + ":"
-		// + mServerSocket.getPort() + " started.");
+		System.out.println(
+				"TCP Forwarding " + mClientSocket.getInetAddress().getHostAddress() + ":" + mClientSocket.getPort()
+						+ " <--> " + mServerSocket.getInetAddress().getHostAddress() + ":" + mServerSocket.getPort());
 	}
 
 	/**
